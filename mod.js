@@ -7,12 +7,12 @@ misc.rows.forEach((row) => {
         row.MalahMax = 1
         row.PermStoreItem = 1
     }
-    if (row.type === "rune" && (['Jah Rune', 'Cham Rune', 'Zod Rune'].indexOf(row.name) === -1)) {
+    if (row.type === "rune") {
         if (['El Rune', 'Eld Rune', 'Tir Rune', 'Nef Rune', 'Eth Rune', 'Ith Rune', 'Tal Rune', 'Ral Rune', 'Ort Rune', 'Thul Rune'].indexOf(row.name) !== -1) {
             row.MalahMin = 1
             row.MalahMax = 1
         }
-        row.PermStoerItem = 1
+        row.PermStoreItem = 1
     }
 })
 
